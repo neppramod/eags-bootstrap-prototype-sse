@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/eggs.css" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/signin.css" rel="stylesheet">
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+	 <script src="js/bootstrap.js"></script>
+    <script src="js/bootbox.js"></script>
+    <script type="text/javascript" src="includes/eggs.js"></script>
+
+
+  <title>Delete Template</title>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <div class="container">
+              <nav class="navbar navbar-inverse" style="margin-top:20px;">
+            <div class="container-fluid">
+            <div class="navbar-header">
+            <a class="navbar-brand" href="#">EAGS</a>
+            </div>
+            <div>
+                <ul class="nav navbar-nav">
+                	<!-- <li id="link1"><a href="createTemplate.html">Create Template</a></li>
+                	<li id="link1"><a href="editTemplate.html">Edit Template</a></li> -->
+                	<li id="link2"  class="active"><a href="delete_template.html">Delete Template</a></li>
+                	<!-- <li id="link3"><a href="changeStatus.html">Change Status</a></li> -->
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                	<li><a href="index.html"><span class="glyphicon glyphicon-user"></span> Logout</a></li>
+                	<li class="active"><a href="">Welcome Administrator</a></li>
+                </ul>
+            </div>
+            </div>
+            </nav>
+      </div>  <!-- Navigation ends -->
+
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                <table class="table table-striped table-bordered table-hover table-condensed">
+
+                    <thead>
+                        <tr>
+                            <th>Select</th>
+                            <th>Template Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" name="initial" value="initial"></input></td>
+                            <td><label for="intial">Initial Template</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="final" value="final"></input></td>
+                            <td><label for="">Final Template</label></td>
+                        </tr>
+                    </tbody>
+                </table>
+					</div>
+				</div>
+            </div>
+<div class="container margin-top-25">
+        <!-- using table for email creation form ends -->
+
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+               <!-- <button class="btn btn-default" type="submit">Button</button> -->
+               <a class="btn btn-primary" href="#" role="button" id="template_delete">Delete</a>
+               <a class="btn btn-danger" href="#" role="button" id="del_cancel">Cancel</a>
+</div>       
+
+</body>
+</html>

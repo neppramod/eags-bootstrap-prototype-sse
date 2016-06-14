@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>My page</title>
+
+<!-- CSS dependencies -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+
+<p>Content here. <a class="alert" href=#>Alert!</a></p>
+
+<!-- JS dependencies -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+
+<!-- bootbox code -->
+<script src="js/bootbox.js"></script>
+<script>
+
+
+
+$(document).on("click", ".alert", function(e) {
+    bootbox.confirm("Are you sure?", function(result) {
+    if (result == true)
+        console.log("It's true");
+    else (result == false)
+        console.log("It's false");
+    });
+});
+</script>
+</body>
+</html>

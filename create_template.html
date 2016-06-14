@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/eggs.css" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/signin.css" rel="stylesheet">
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+	 <script src="js/bootstrap.js"></script>
+    <script src="js/bootbox.js"></script>
+    <script type="text/javascript" src="includes/eggs.js"></script>
+
+
+  <title>Create Template</title>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <div class="container">
+              <nav class="navbar navbar-inverse" style="margin-top:20px;">
+            <div class="container-fluid">
+            <div class="navbar-header">
+            <a class="navbar-brand" href="#">EAGS</a>
+            </div>
+            <div>
+                <ul class="nav navbar-nav">
+					<li id="link1" class="active"><a href="create_template.html">Create Template</a></li>
+                	<!-- <li id="link1"><a href="editTemplate.html">Edit Template</a></li>
+                	<li id="link2"><a href="deleteTemplate.html">Delete Template</a></li>
+                	<li id="link3"><a href="changeStatus.html">Change Status</a></li> -->
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                	<li><a href="index.html"><span class="glyphicon glyphicon-user"></span> Logout</a></li>
+                	<li class="active"><a href="">Welcome Administrator</a></li>
+                </ul>
+            </div>
+            </div>
+            </nav>
+      </div>  <!-- Navigation ends -->
+
+
+     <form  role="form">
+       <div class="container">
+                <!-- using table for email creation form -->
+            <div class="row margin-top-25">
+                <div class="col-xs-2"><label for="Title">Title</label></div>
+                <div class="col-xs-4"><input class="form-control"></input></div>
+            </div> <!-- row -->
+            <div class="row margin-top-25">
+                <div class="col-xs-2"><label for="Subject">Subject</label></div>
+                <div class="col-xs-4"><input class="form-control"></input></div>
+            </div> <!-- row -->
+            <div class="row margin-top-25">
+                <div class="col-xs-2"><label for="Content">Content</label></div>
+                <div class="col-xs-4">
+                    <textarea class="form-control" rows="6">
+                    </textarea></div>
+            </div> <!-- row -->
+            <div class="row margin-top-25">
+                <div class="col-xs-2"><label for="Status">Status</label></div>
+                <div class="col-xs-4">
+                    <select class="form-control">
+                      <option>Select Status..</option>
+                      <option>Active</option>
+                      <option>Inactive</option>
+                    </select>
+                </div>
+            </div> <!-- row -->
+           
+       </div> <!-- container -->
+
+
+    <div class="container margin-top-25">
+        <!-- using table for email creation form ends -->
+
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+               <!-- <button class="btn btn-default" type="submit">Button</button> -->
+               <a class="btn btn-primary" href="#" role="button" id="template_create">Save</a>
+               <a class="btn btn-danger" href="#" role="button" id="create_cancel">Cancel</a>
+    </div>
+    </form>
+
+</body>
+</html>
